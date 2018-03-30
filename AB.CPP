@@ -2,56 +2,46 @@
 #include<conio.h>
 void main()
 {
-int a=8,i,j,k,l;
+int a,i,j,k,l;
 clrscr();
-for(i=1;i<=a/2;i++)
-{
-if(i%2!=0)
-{
-for(j=1;j<=i;j++)
-{
-printf("*");
-}
-for(k=1;k<=a-i;k++)
-{
-printf("#");
-}
-printf("\n");
-}
-else
-{
-for(j=0;j<a-i;j++)
-{
-printf("#");
-}
-for(k=0;k<i;k++)
-{
-printf("*");
-}
-printf("\n");
-}
-}
-for(i=a/2;i>=1;i--)
-{
-if(i%2==0)
-{
-for(j=i;j>=1;j--)
-{
-printf("*");
-}
-for(k=a-i;k>=1;k--)
-printf("#");
-printf("\n");
-}
-else
-{
-for(j=a-i;j>=1;j--)
-{
-printf("#");
-}
-for(k=i;k>=1;k--)
-printf("*");
-printf("\n");
-}
-}
+  printf("enter the number of lines:");
+  scanf("%d",&a);
+  for(i=1;i<=a/2;i++)
+  {
+    if(i%2!=0)
+    {
+      for(j=1;j<=i;j++)
+      printf("*");
+      for(k=1;k<=a-i;k++)
+      printf("#");
+      printf("\n");
+    }
+    else
+    {
+        for(j=0;j<a-i;j++)
+        printf("#");
+        for(k=0;k<i;k++)
+        printf("*");
+        printf("\n");
+    }
+  }
+  for(i=a/2;i>=1;i--)
+  {
+    if(i%2==0)
+    {
+      for(j=i;j>=1;j--)
+      printf("*");
+      for(k=a-i;k>=1;k--)
+      printf("#");
+      printf("\n");
+    }
+    else
+    {
+      for(j=a-i;j>=1;j--) 
+      printf("#");
+      for(k=i;k>=1;k--)
+      printf("*");
+      printf("\n");
+    }
+  }
 }
