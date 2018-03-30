@@ -2,8 +2,8 @@
 #include<conio.h>
 void main()
 {
-int a,i,j,k,l;
-clrscr();
+  int a,i,j,k,l;
+  clrscr();
   printf("enter the number of lines:");
   scanf("%d",&a);
   for(i=1;i<=a/2;i++)
